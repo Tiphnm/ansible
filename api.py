@@ -11,7 +11,7 @@ def welcome():
 def increment(): 
      cursor.execute("UPDATE MaTable SET ID = ID + 1")
      conn.commit()
-     return "Successfully incremented!"
+     return "Successfully incremented! Please go to the /id page."
 
 @app.route('/id')
 def show_id(): 

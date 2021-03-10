@@ -30,6 +30,15 @@
           - psycopg2-binary
           - Flask
 
+    - name: pd reset database user
+      become: yes
+      become_method: sudo
+      become_user: postgres
+      postgresql_user: 
+        db: postgres
+        name: postgres
+        password: "123"
+
     - name: Clone a repo git
       git:
         repo: https://github.com/Tiphnm/ansible.git

@@ -30,7 +30,7 @@
           - psycopg2-binary
           - Flask
 
-    - name: pd reset database user
+    - name: Modification mot de passe Postgres
       become: yes
       become_method: sudo
       become_user: postgres
